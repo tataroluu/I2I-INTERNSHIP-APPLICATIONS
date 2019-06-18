@@ -1,4 +1,4 @@
---tablo tanımlaması 
+--Table Description 
 CREATE TABLE intern 
 (
 id number NOT NULL PRIMARY KEY,
@@ -11,7 +11,7 @@ department varchar(50)
 );
 
 
---tablo içeriklendirmesi  
+--Table content   
 INSERT INTO intern 
 values(1,'servet','tartar','munzur university','computer engineering',4,'mersin');
 
@@ -45,8 +45,8 @@ values(10,'beytullah','atik','karabük university','computer engineering',4,'mer
 INSERT INTO intern 
 values(11,'davut','kurt','inönü university','computer engineering',4,'malatya');
 
---sorgu satırı
+--query row
 SELECT * FROM intern;
 
---tablo silme 
+--delete table 
 DROP TABLE intern;
