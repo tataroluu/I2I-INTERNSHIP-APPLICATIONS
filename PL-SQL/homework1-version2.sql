@@ -1,18 +1,17 @@
 CREATE TABLE 
-    intern 
+    INTERN 
     (
-    id number NOT NULL PRIMARY KEY,
-    firstname varchar(50),
-    lastname varchar(50),
-    university varchar(50),
-    department varchar(50),
-    schoolclass number,
-    department varchar(50)
+    INTERN_ID NUMBER NOT NULL PRIMARY KEY,
+    VI_FIRST_NAME VARCHAR(50),
+    VI_LAST_NAME VARCHAR(50),
+    VI_UNIVERSITY VARCHAR(50),
+    VI_DEPARTMENT VARCHAR(50),
+    VS_SCHOOL_CLASS NUMBER
     );
    
 INSERT INTO 
-    intern 
-values
+    INTERN 
+VALUES
 (
     1,
     'servet',
@@ -23,8 +22,8 @@ values
     'mersin'
 );
 INSERT INTO 
-    intern 
-values
+    INTERN 
+VALUES
 (
     2,
     'tolga',
@@ -35,8 +34,8 @@ values
     'ankara'
 );
 INSERT INTO 
-    intern 
-values
+    INTERN 
+VALUES
 (
     3,
     'ayşegül',
@@ -47,8 +46,8 @@ values
     'kayseri'
 );
 INSERT INTO 
-    intern 
-values
+    INTERN 
+VALUES
 (
     4,
     'gizemnur',
@@ -59,8 +58,8 @@ values
     'trabzon'
 );
 INSERT INTO 
-    intern 
-values
+    INTERN 
+VALUES
 (
     5,
     'melih sinan',
@@ -71,8 +70,8 @@ values
     'trabzon'
 );
 INSERT INTO 
-    intern 
-values
+    INTERN 
+VALUES
 (
     6,
     'eren',
@@ -83,8 +82,8 @@ values
     'ankara'
 );
 INSERT INTO 
-    intern 
-values
+    INTERN 
+VALUES
 (
     7,
     'yunus',
@@ -95,8 +94,8 @@ values
     'antalya'
 );
 INSERT INTO 
-    intern 
-values
+    INTERN 
+VALUES
 (
     8,
     'özge nur',
@@ -107,8 +106,8 @@ values
     'afyon karahisar'
 );
 INSERT INTO 
-    intern 
-values
+    INTERN 
+VALUES
 (
     9,
     'ümit',
@@ -119,8 +118,8 @@ values
     'edirne'
 );
 INSERT INTO 
-    intern 
-values
+    INTERN 
+VALUES
 (
     10,
     'beytullah',
@@ -131,8 +130,8 @@ values
     'mersin'    
 );
 INSERT INTO 
-    intern 
-values
+    INTERN 
+VALUES
 (
     11,
     'davut',
@@ -146,7 +145,7 @@ values
 SELECT 
     * 
 FROM 
-    intern;
+    INTERN;
     
 DROP TABLE 
-    intern;
+    INTERN;
