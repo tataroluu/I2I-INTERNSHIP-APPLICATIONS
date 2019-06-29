@@ -11,6 +11,7 @@ FROM
     HR.EMPLOYEES;
     
 cursor_employee cursor_emp%rowtype;
+   
     write_st VARCHAR2(400);
     write_header VARCHAR2(400);    
     write_line  VARCHAR2(400);
@@ -26,7 +27,10 @@ BEGIN
 	UTL_FILE.NEW_LINE(file_utl);
     
 FOR 
-    cursor_employee IN cursor_emp LOOP
+    cursor_employee 
+IN 
+    cursor_emp 
+LOOP
 	write_st := rpad(cursor_employee.department_id,10,’ ‘) || 
     rpad(cursor_employee.employee_id,25,’ ‘) || 
     rpad(cursor_employee.first_name,30,’ ‘) ||
