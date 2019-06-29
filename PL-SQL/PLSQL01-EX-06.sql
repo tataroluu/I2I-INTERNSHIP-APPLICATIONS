@@ -1,9 +1,18 @@
-SELECT job_id 
-    AS DEPARTMENT_NAME , 
-        SUM(SALARY) "TOTAL SALARY"
-            FROM HR.EMPLOYEES
-                WHERE job_id 
-                    NOT LIKE '&&'
-                        GROUP BY job_id
-                            HAVING SUM(SALARY)>0
-                                 ORDER BY SUM(SALARY);
+SELECT 
+    JOB_ID 
+AS 
+    DEPARTMENT_NAME , 
+SUM(SALARY) 
+    "TOTAL SALARY"
+FROM 
+    HR.EMPLOYEES
+WHERE 
+    JOB_ID 
+NOT LIKE 
+    '&&'
+GROUP BY 
+    JOB_ID
+HAVING SUM
+    (SALARY)>0
+ORDER BY SUM 
+    (SALARY);
