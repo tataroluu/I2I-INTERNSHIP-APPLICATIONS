@@ -1,9 +1,12 @@
- SELECT 
+SELECT 
     first_name 
- FROM 
+FROM 
     HR.EMPLOYEES
- WHERE 
+WHERE 
     employee_id = 
     (
-        SELECT MAX (employee_id) FROM HR.EMPLOYEES 
+SELECT MAX 
+    (employee_id) 
+FROM 
+    HR.EMPLOYEES
     );
