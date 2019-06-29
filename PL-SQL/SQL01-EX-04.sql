@@ -1,5 +1,6 @@
-CREATE TABLE EMPLOYEE 
-(
+CREATE TABLE 
+    EMPLOYEE 
+    (
     employee_id NUMBER NOT NULL PRIMARY KEY,
     fist_name VARCHAR(50),
     last_name VARCHAR(50),
@@ -8,9 +9,10 @@ CREATE TABLE EMPLOYEE
     hire_date DATE,
     salary NUMBER,
     department_id NUMBER
-);
-/
-INSERT INTO EMPLOYEE 
+    );
+
+INSERT INTO 
+    EMPLOYEE 
 VALUES
 (
 	3,
@@ -23,12 +25,15 @@ VALUES
 	4000,
 	3
 );
-/
+
 DELETE 
-FROM EMPLOYEE 
-WHERE employee_id=1;
-/
-UPDATE EMPLOYEE
+FROM 
+    EMPLOYEE 
+WHERE 
+    employee_id=1;
+    
+UPDATE 
+    EMPLOYEE
 SET 
     employee_id=2,
     fist_name ='aslıhan',
@@ -38,8 +43,13 @@ SET
     hire_date =TO_DATE('2019/06/21 21:02:44', 'yyyy/mm/dd hh24:mi:ss') ,
     salary =5000,
     department_id =33 
-WHERE employee_id=2;
-/
-DROP TABLE EMPLOYEE;
-/
-SELECT * FROM EMPLOYEE;
+WHERE 
+    employee_id=2;
+
+DROP TABLE 
+    EMPLOYEE;
+
+SELECT 
+    * 
+FROM 
+    EMPLOYEE;
