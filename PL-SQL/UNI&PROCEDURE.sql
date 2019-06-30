@@ -11,7 +11,10 @@ FROM
     SUMMER_INTERN 
 WHERE 
     FIRST_NAME = vs_first_name;
-    DBMS_OUTPUT.PUT_LINE('university name is ='||vs_university_name);
+    DBMS_OUTPUT.PUT_LINE
+    (
+    'university name is ='||vs_university_name
+    );
 END;
 
 CREATE OR REPLACE PROCEDURE 
@@ -44,7 +47,8 @@ BEGIN
     (
     pis_first_name, pos_university_name
     );
-    DBMS_OUTPUT.PUT_LINE(
+    DBMS_OUTPUT.PUT_LINE
+    (
     'university name is ='||pos_university_name
     );
 END;
