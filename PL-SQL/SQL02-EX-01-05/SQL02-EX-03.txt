@@ -1,0 +1,33 @@
+SELECT 
+DISTINCT 
+    JOB_ID,
+CASE 
+WHEN 
+    JOB_ID = 'AD_PRES'  
+THEN 
+    'A'
+WHEN 
+    JOB_ID = 'ST_MAN'   
+THEN 
+    'B'
+WHEN 
+    JOB_ID = 'IT_PROG'  
+THEN 
+    'C'
+WHEN 
+    JOB_ID = 'SA_REP'   
+THEN 
+    'D'
+WHEN 
+    JOB_ID = 'ST_CLERK' 
+THEN 
+    'E'
+ELSE 
+    '0'
+END
+AS 
+    GRADE
+FROM
+    HR.EMPLOYEES
+ORDER BY 
+    GRADE;
