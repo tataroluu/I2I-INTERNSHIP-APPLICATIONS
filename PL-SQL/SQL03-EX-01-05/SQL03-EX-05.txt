@@ -1,0 +1,7 @@
+->ROLBACK:
+
+Transaction’ın gerçekleştirdiği tüm işlemleri geri almak için kullanılır. Yani, yapılan tüm işlemler transaction’ın başlangıcındaki haline geri döner. 
+
+->COMMIT: 
+
+İşlemlerin doğru olduğu takdirde, işlemleri kalıcı olarak ve tüm sessionların kullanımına sunulacak biçimde kaydetme komutudur.
